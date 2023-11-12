@@ -3,5 +3,15 @@
 @tailwind utilities;
 
 .button {
-  @apply w-32 h-10 uppercase rounded-md border-black border-2 flex items-center justify-around;
+  @apply w-36 h-10 uppercase rounded-md border-black border-2 flex items-center justify-around;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: black;
+  transform-origin: 0%;
 }

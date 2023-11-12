@@ -3,11 +3,14 @@ import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
 const AboutMe = () => {
   return (
-    <div>
-      <p className="uppercase font-extrabold text-center text-3xl tracking-widest">
+    <div className="sm:mt-[40px]">
+      <p
+        className="uppercase font-extrabold text-center text-3xl tracking-widest"
+        id="about"
+      >
         About me
       </p>
-      <p className="uppercase font-light text-center text-sm tracking-wide my-5">
+      <p className="uppercase font-light text-justify md:text-center text-sm tracking-wide my-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam impedit
         quas deserunt atque accusamus quibusdam quaerat, repellendus incidunt
         necessitatibus? Corrupti voluptates alias aperiam consequuntur illum
@@ -17,7 +20,7 @@ const AboutMe = () => {
         <div></div>
         <div>
           <p className="uppercase text-lg font-bold">My Biography</p>
-          <ul className="text-justify">
+          <ul className="text-justify ">
             <li>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia rem
               accusamus odio dolorem assumenda soluta distinctio doloremque eum
@@ -40,7 +43,9 @@ const AboutMe = () => {
           <p>
             <button className="w-40 h-10 uppercase rounded-md  border-black border-2 flex items-center justify-around mt-5">
               download cv
-              <HiOutlineDocumentDownload className="text-lg" />
+              <svg className="animate-bounce w-6 h-6 duration-500 -z-[1]">
+                <HiOutlineDocumentDownload className="text-2xl" />
+              </svg>
             </button>
           </p>
         </div>

@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^10.16.4",
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "react-progressbar": "^15.4.1",
+    "swiper": "^11.0.4",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "^20",

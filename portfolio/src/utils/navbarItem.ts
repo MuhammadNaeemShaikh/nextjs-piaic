@@ -6,22 +6,34 @@ export interface NavbarItemType {
 export const NavbarItem: NavbarItemType[] = [
   {
     label: 'home',
-    href: '/',
+    href: '#home',
   },
   {
     label: 'about',
-    href: '/about',
+    href: '#about',
   },
   {
-    label: 'services',
-    href: '/services',
+    label: 'skills',
+    href: '#myskills',
   },
   {
-    label: 'portfolio',
-    href: '/portfolio',
+    label: 'qualification',
+    href: '#qualification',
+  },
+  {
+    label: 'experience',
+    href: '#experience',
+  },
+  {
+    label: 'Services',
+    href: '#myservice',
+  },
+  {
+    label: 'projects',
+    href: '#projects',
   },
   {
     label: 'contact',
-    href: '/contact',
+    href: '#contact',
   },
 ];
