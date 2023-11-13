@@ -25,7 +25,7 @@ export default function Home() {
       <div className="mt-5 space-y-32" id="home">
         <Hero />
         <AboutMe />
-        <MySkills />
+        <MySkills/>
         <Qualification
           id="qualification"
           title="qualification"

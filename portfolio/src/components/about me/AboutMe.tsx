@@ -4,22 +4,22 @@ import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
 const AboutMe = () => {
   return (
-    <div className="sm:mt-[40px]">
+    <div className="">
       <p
         className="uppercase font-extrabold text-center text-3xl tracking-widest"
         id="about"
       >
         About me
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 h-96 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 h-[80%] overflow-hidden">
         <div>
-          <div className="max-h-[50%] rounded-md">
+          <div className='h-[80%] overflow-hidden'>
             <Image
               src="/profile.jpg"
               alt="profilePricture"
               width={400}
-              height={100}
-              className="rounded-md max-h-[50%] "
+              height={10}
+              className="rounded-md h-[80%] "
             />
           </div>
         </div>
