@@ -3,15 +3,9 @@ import ReactProgressbar from './subcomponent/ReactProgressbar';
 
 const MySkills = () => {
   return (
-    <div className="" id="myskills">
-      <p className="uppercase font-extrabold text-center text-3xl tracking-widest mt-[315px] md:mt-0">
+    <div className="space-y-7 px-7 mt-32" id="myskills">
+      <p className="uppercase font-extrabold text-center text-3xl tracking-widest mt-[315px] md:mt-0 ">
         my skills
-      </p>
-      <p className="uppercase font-light text-center text-sm tracking-wide my-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam impedit
-        quas deserunt atque accusamus quibusdam quaerat, repellendus incidunt
-        necessitatibus? Corrupti voluptates alias aperiam consequuntur illum
-        autem minima vero nobis saepe.
       </p>
       <div className="grid md:grid-cols-2 grid-cols-1 md:px-16">
         <div>

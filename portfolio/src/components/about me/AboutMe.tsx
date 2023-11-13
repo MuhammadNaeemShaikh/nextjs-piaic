@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
@@ -10,36 +11,30 @@ const AboutMe = () => {
       >
         About me
       </p>
-      <p className="uppercase font-light text-justify md:text-center text-sm tracking-wide my-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam impedit
-        quas deserunt atque accusamus quibusdam quaerat, repellendus incidunt
-        necessitatibus? Corrupti voluptates alias aperiam consequuntur illum
-        autem minima vero nobis saepe.
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 h-96">
-        <div></div>
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 h-96 items-center">
         <div>
-          <p className="uppercase text-lg font-bold">My Biography</p>
-          <ul className="text-justify ">
-            <li>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia rem
-              accusamus odio dolorem assumenda soluta distinctio doloremque eum
-              veritatis molestias voluptatum tempore recusandae, et quasi qui
-              dolore repellendus, vel enim.
-            </li>
-            <li>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia rem
-              accusamus odio dolorem assumenda soluta distinctio doloremque eum
-              veritatis molestias voluptatum tempore recusandae, et quasi qui
-              dolore repellendus, vel enim.
-            </li>
-            <li>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia rem
-              accusamus odio dolorem assumenda soluta distinctio doloremque eum
-              veritatis molestias voluptatum tempore recusandae, et quasi qui
-              dolore repellendus, vel enim.
-            </li>
-          </ul>
+          <div className="max-h-[50%] rounded-md">
+            <Image
+              src="/profile.jpg"
+              alt="profilePricture"
+              width={400}
+              height={100}
+              className="rounded-md max-h-[50%] "
+            />
+          </div>
+        </div>
+        <div>
+          <p className="uppercase text-lg font-bold my-3">My Biography</p>
+          Hello, I&apos;m Muhammad Naeem Shaikh. I earned my bachelor&apos;s
+          degree in Information Technology from the University of Sindh.
+          Furthering my education, I completed a certification in the MERN Stack
+          Bootcamp from Contour. Currently, I am deepening my expertise by
+          pursuing certification in Web 3.0 and Metaverse technologies through
+          PIAIC. This immersive program covers TypeScript, Python, Next.js,
+          generative AI, blockchain, and other cutting-edge technologies.
+          Presently, I specialize as a Node.js developer, and my future goal is
+          to evolve into a Web 3.0 and Metaverse developer, contributing to the
+          forefront of emerging technologies.
           <p>
             <button className="w-40 h-10 uppercase rounded-md  border-black border-2 flex items-center justify-around mt-5">
               download cv

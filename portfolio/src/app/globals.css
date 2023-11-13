@@ -6,6 +6,17 @@
   @apply w-36 h-10 uppercase rounded-md border-black border-2 flex items-center justify-around;
 }
 
+.contactFields {
+  @apply border-slate-200 border-2 w-[90%] indent-4 py-2 rounded-md;
+}
+
+.error {
+  @apply text-red-400;
+}
+
+.label{
+ @apply font-extralight text-slate-400
+}
 .progress-bar {
   position: fixed;
   top: 0;

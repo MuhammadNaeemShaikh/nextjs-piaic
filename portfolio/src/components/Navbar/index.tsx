@@ -1,5 +1,4 @@
 import { NavbarItem, NavbarItemType } from '@/utils/navbarItem';
-import Link from 'next/link';
 import React from 'react';
 
 const Navbar = (props: { pageName: string }) => {

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/free-mode';
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 import { RxArrowTopRight } from 'react-icons/rx';
 import { ServiceItem, ServiceItemType } from '@/utils/servicesItem';
 import { GiSpiderWeb } from 'react-icons/gi';
@@ -26,6 +26,10 @@ const Services = (props: {
       </p>
       <div className="flex items-center justify-center flex-col">
         <Swiper
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: true,
+          }}
           breakpoints={{
             340: {
               slidesPerView: 1,
@@ -40,7 +44,7 @@ const Services = (props: {
           pagination={{
             clickable: true,
           }}
-          modules={[FreeMode, Pagination]}
+          modules={[FreeMode, Pagination, Autoplay]}
           className="max-w-[90%] lg:max-w-[80%]"
         >
           {ServiceItem.map((item: ServiceItemType) => (

@@ -8,6 +8,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 import Qualification from '@/components/qualification/Qualification';
 import Services from '@/components/services/Services';
 import { ServiceItem } from '@/utils/servicesItem';
+import Contact from '@/components/contact/Contact';
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -67,6 +68,7 @@ export default function Home() {
           ServiceItem={ServiceItem}
           id="projects"
         />
+        <Contact />
         <br />
         <br />
         <br />
