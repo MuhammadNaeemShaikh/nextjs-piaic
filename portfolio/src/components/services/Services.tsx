@@ -17,7 +17,7 @@ const Services = (props: {
   id: string;
 }) => {
   return (
-    <div className="" id={props.id ? props.id : 'null'}>
+    <div className="text-white" id={props.id ? props.id : 'null'}>
       <p className="uppercase font-extrabold  text-center text-lg md:text-3xl tracking-widest">
         {props.title ? props.title : null}
       </p>

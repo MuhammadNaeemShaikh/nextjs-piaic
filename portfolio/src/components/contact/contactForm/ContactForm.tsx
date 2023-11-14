@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useFormik } from 'formik';
 import { ContactFormSchema } from './FormValidation';
 
@@ -20,6 +20,10 @@ const ContactForm = () => {
         action.resetForm();
       },
     });
+
+  useEffect(() => {
+    
+  }, []);
 
   return (
     <form onSubmit={handleSubmit}>

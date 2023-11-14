@@ -20,12 +20,13 @@ export default function Home() {
 
   return (
     <div>
-      <motion.div className="progress-bar" style={{ scaleX }} />
+      <motion.div className="progress-bar -z-0" style={{ scaleX }} />
+
       <Navbar pageName="home" />
       <div className="mt-5 space-y-32" id="home">
         <Hero />
         <AboutMe />
-        <MySkills/>
+        <MySkills />
         <Qualification
           id="qualification"
           title="qualification"
@@ -36,10 +37,11 @@ export default function Home() {
           degreetitle="Bachelor Degree"
           uniName="University of Sindh"
           completionYear="2018 - 2022"
-          degreeContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam impedit
-          quas deserunt atque accusamus quibusdam quaerat, repellendus incidunt
-          necessitatibus? Corrupti voluptates alias aperiam consequuntur illum
-          autem minima vero nobis saepe."
+          degreeContent="I pursued my Bachelor's Degree at the University of Sindh from 2018 to 2022. During this period, I gained comprehensive knowledge in various subjects, honed my critical thinking skills, and participated in diverse academic activities. The experience provided a solid foundation for my professional journey and shaped my passion for continuous learning and growth."
+          collegeDegreetitle="Intermediate"
+          collegeName="New Ali Garh College"
+          collegeCompletionYear="2015-2017"
+          collegeContent="During my intermediate studies at New Ali Garh College from 2015 to 2017, I delved into various subjects that laid the groundwork for my academic and personal development. Engaging with diverse learning opportunities and collaborative projects, I honed my analytical skills and cultivated a passion for continuous education. This period was pivotal in shaping my academic journey and fostering a commitment to excellence in my pursuits."
         />
         <Qualification
           id="experience"
@@ -50,11 +52,12 @@ export default function Home() {
         autem minima vero nobis saepe."
           degreetitle="JUNIOR NODE JS DEVELOPER"
           uniName="Matz Solution"
-          completionYear="1-APR-2023"
-          degreeContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam impedit
-          quas deserunt atque accusamus quibusdam quaerat, repellendus incidunt
-          necessitatibus? Corrupti voluptates alias aperiam consequuntur illum
-          autem minima vero nobis saepe."
+          completionYear="1-APR-2023 PRESENT"
+          degreeContent="I am currently employed as a junior Node.js developer, where I contribute to the development and maintenance of web applications, ensuring their functionality and performance meet the required standards."
+          collegeDegreetitle="PHP TRAINEE"
+          collegeName="HIDAYA INSTitiute of science and technology"
+          collegeCompletionYear="2022-FEB - 2022-MAY"
+          collegeContent="As a PHP Trainee at HIDAYA Institute of Science and Technology from February to May 2022, I actively engaged in hands-on training to enhance my skills in PHP development. During this period, I worked on real-world projects, collaborated with experienced professionals, and gained practical insights into web development. This experience allowed me to apply theoretical knowledge to real-world scenarios, contributing to my growth as a PHP developer and paving the way for a promising career in the field."
         />
         <Services
           title="My Services"

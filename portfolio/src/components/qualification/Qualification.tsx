@@ -17,19 +17,16 @@ interface IProps {
 
 const Qualification = (props: IProps) => {
   return (
-    <div className="" id={props.id && props.id}>
+    <div className="text-white" id={props.id && props.id}>
       <p
         className="uppercase font-extrabold text-center text-lg md:text-3xl tracking-widest"
         id="about"
       >
         {props.title ? props.title : null}
       </p>
-      <p className="uppercase font-light text-justify md:text-center text-sm tracking-wide mt-10">
-        {props.body ? props.body : null}
-      </p>
       <div className="relative md:px-16 overflow-hidden mt-16 space-y-5 ">
         <div className="grid md:grid-cols-2 grid-cols-1 mt-5  md:gap-16">
-          <div className="border-black border-4 p-2 shadow-lg">
+          <div className="border-white  border-4 p-4 rounded-md shadow-lg">
             <p>{props.degreetitle ? props.degreetitle : null}</p>
             <p>{props.uniName ? props.uniName : null}</p>
             <p>{props.completionYear ? props.completionYear : null}</p>
@@ -37,7 +34,7 @@ const Qualification = (props: IProps) => {
           </div>
           <div></div>
         </div>
-        <div className="md:block hidden border-r-4 border-black h-[28.1rem] absolute left-[47.5%] top-0 ">
+        <div className="md:block hidden border-r-4 border-white h-[40.1rem] absolute left-[47.5%] top-0 ">
           <SiSemanticscholar className="text-4xl" />
         </div>
 
@@ -47,16 +44,13 @@ const Qualification = (props: IProps) => {
 
         <div className="grid md:grid-cols-2 grid-cols-1 md:ml-8 md:px-16 md:gap-16">
           <div></div>
-          <div className="border-black border-4 p-2 shadow-lg">
-            <p>Intermediate</p>
-            <p>New Ali Garh College</p>
-            <p>2015 - 2017</p>
+          <div className="border-white rounded-md border-4 p-4 shadow-lg">
+            <p>{props.collegeDegreetitle ? props.collegeDegreetitle : null}</p>
+            <p>{props.collegeName ? props.collegeName : null}</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Laboriosam ipsam harum nesciunt ab accusamus exercitationem quis
-              dolor, expedita ut maxime autem cumque ipsa praesentium soluta
-              quas officia, tempore id natus!
+              {props.collegeCompletionYear ? props.collegeCompletionYear : null}
             </p>
+            <p>{props.collegeContent ? props.collegeContent : null}</p>
           </div>
         </div>
       </div>

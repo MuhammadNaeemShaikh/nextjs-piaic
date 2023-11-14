@@ -6,7 +6,7 @@ const ReactProgressbar = (props: { percent: number; skillName: string }) => {
   return (
     <div className='my-2'>
       <h3 className='uppercase font-bold text-lg'>{props.skillName}</h3>
-      <Progress completed={props.percent} color={'black'} />
+      <Progress completed={props.percent} color={'white'} />
     </div>
   );
 };

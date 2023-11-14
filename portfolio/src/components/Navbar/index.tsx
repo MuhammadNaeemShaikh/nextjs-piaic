@@ -13,21 +13,20 @@ const Navbar = (props: { pageName: string }) => {
     }
   };
   return (
-    <div className="flex justify-between sticky top-3 bg-white py-5 z-[2]">
+    <div className="flex justify-between sticky top-3  py-5 z-[2] text-white">
       <div className="uppercase">
         <span className="font-extrabold tracking-widest">Muhammad</span>
         <span className="font-light">Naeem</span>
       </div>
       <div className="">
         <div className="">
-          <ul className="hidden md:flex uppercase font-light space-x-2 tracking-normal ">
+          <ul className="hidden md:flex uppercase font-light space-x-2 tracking-wide ">
             {NavbarItem.map((item: NavbarItemType, index: number) => (
               <li
                 key={index}
-                className="hover:cursor-pointer"
+                className="hover:cursor-pointer hover:underline"
                 onClick={() => smoothScrollTo(item.href.substring(1))}
               >
-                {/* <Link href={item.href}>{item.label}</Link> */}
                 {item.label}
               </li>
             ))}

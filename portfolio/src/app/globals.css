@@ -7,15 +7,15 @@
 }
 
 .contactFields {
-  @apply border-slate-200 border-2 w-[90%] indent-4 py-2 rounded-md;
+  @apply border-slate-200 text-slate-700 border-2 w-[90%] indent-4 py-2 rounded-md;
 }
 
 .error {
   @apply text-red-400;
 }
 
-.label{
- @apply font-extralight text-slate-400
+.label {
+  @apply font-extralight text-slate-400;
 }
 .progress-bar {
   position: fixed;
@@ -23,6 +23,7 @@
   left: 0;
   right: 0;
   height: 10px;
-  background: black;
+  background: rgb(179, 178, 178);
   transform-origin: 0%;
+  z-index: 2;
 }
